@@ -1,112 +1,83 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="de">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, user-scalable=no" />
-  <title>Marie Zieger</title>
-  <link rel="icon" type="image/x-icon" href="assets/favicon.png">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-  <style>
-    body {
-      font-family: 'Trebuchet MS', Georgia, serif;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      background-color: white; /* Weißer Hintergrund */
-      color: black;
-      margin: 0;
-      padding: 0;
-      overflow: hidden;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marie Zieger</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            font-family: "Century Gothic", sans-serif;
+            background-color: #F8FFF4; /* Creme-weißer Hintergrund */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
 
-    .container {
-      text-align: center;
-    }
+        .container {
+            position: relative;
+            text-align: center;
+            background-color: #283618; /* Dunklere Farbe für abstrakte Wolke */
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
 
-    h1 {
-      font-size: 1.7em; /* Größere Schrift für den Namen */
-      margin-bottom: 0.5em; /* Kleinerer Abstand nach unten */
-      margin-top: 1em; /* Größerer Abstand nach oben */
-    }
+        .profile-image {
+            position: relative;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin: -75px auto 20px auto; /* Überlappen des Profilbilds */
+        }
 
-    ul {
-      list-style: none;
-      padding: 0;
-      text-align: center;
-      display: flex;
-      justify-content: center; /* Elemente nebeneinander ausrichten */
-    }
+        .profile-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
 
-    li {
-      margin: 1em;
-    }
+        .name {
+            font-size: 2em;
+            color: white; /* Weiße Farbe für den Namen */
+            margin: 20px 0 10px 0;
+        }
 
-    li a {
-      text-decoration: none;
-      display: inline-block;
-      padding: 10px;
-      min-width: 150px;
-      background-color: black;
-      color: white;
-      border-radius: 5px;
-      font-size: 1.2em;
-      transition: background-color 0.2s;
-    }
+        .qualification {
+            font-size: 1.2em;
+            color: white; /* Weiße Farbe für die Qualifikation */
+            margin: 0;
+        }
 
-    li a:hover {
-      background-color: #333;
-    }
+        .icons {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2em;
+            margin-top: 20px;
+        }
 
-    .fa-icon {
-      margin-right: 0.5em;
-    }
-
-    .profile-image {
-      width: 230px;
-      height: 230px;
-      border-radius: 50%;
-      overflow: hidden;
-      margin: 0 auto 1em auto; /* Größerer Abstand nach unten */
-    }
-
-    .profile-image img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-
-    .profile-text {
-      font-size: 1.2em;
-      margin-top: 0.5em; /* Kleinerer Abstand nach oben */
-      margin-bottom: 1em; /* Größerer Abstand nach unten */
-    }
-
-    /* Neuer Stil für den Namen und die Qualifikation */
-    .name {
-      font-size: 1.7em; /* Größere Schrift für den Namen */
-      margin: 0;
-    }
-
-    .qualification {
-      font-size: 1em;
-    }
-  </style>
+        .icon {
+            margin: 0 10px;
+            color: white;
+        }
+    </style>
 </head>
-
 <body>
-  <div class="container">
-    <div class="profile-image">
-      <img src="me.jpg" alt="Profile Image">
+    <div class="container">
+        <div class="profile-image">
+            <img src="me.jpg" alt="Profile Image">
+        </div>
+        <h1 class="name">Marie Zieger</h1>
+        <p class="qualification">M. Sc. Psychologie</p>
+        <div class="icons">
+            <a href="https://www.linkedin.com/in/marie-zieger/" class="icon"><i class="fab fa-linkedin"></i></a>
+            <a href="mailto:marie@sonnenhof-zieger.de" class="icon"><i class="far fa-envelope"></i></a>
+        </div>
     </div>
-    <h1>Marie Zieger</h1>
-    <p class="profile-text">M. Sc. Psychologie</p> <!-- Qualifikation hinzugefügt -->
-    <ul>
-      <li><a href="https://www.linkedin.com/in/marie-zieger/"><i class="fab fa-linkedin fa-icon"></i>LinkedIn</a></li>
-      <li><a href="mailto:marie@sonnehof-zieger.de"><i class="far fa-envelope fa-icon"></i>Email</a></li> <!-- Mailadresse hinzugefügt -->
-    </ul>
-  </div>
 </body>
-
 </html>
