@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marie Zieger</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            font-family: "Century Gothic", sans-serif;
+            background-color: #F8FFF4; /* Creme-weißer Hintergrund */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            position: relative;
+            text-align: center;
+            background-color: #283618; /* Dunklere Farbe für abstrakte Wolke */
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .profile-image {
+            position: relative;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin: -75px auto 20px auto; /* Überlappen des Profilbilds */
+        }
+
+        .profile-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .name {
+            font-size: 2em;
+            color: white; /* Weiße Farbe für den Namen */
+            margin: 20px 0 10px 0;
+        }
+
+        .qualification {
+            font-size: 1.2em;
+            color: white; /* Weiße Farbe für die Qualifikation */
+            margin: 0;
+        }
+
+        .icons {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2em;
+            margin-top: 20px;
+        }
+
+        .icon {
+            margin: 0 10px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="profile-image">
+            <img src="me.jpg" alt="Profile Image">
+        </div>
+        <h1 class="name">Marie Zieger</h1>
+        <p class="qualification">M. Sc. Psychologie</p>
+        <div class="icons">
+            <a href="https://www.linkedin.com/in/marie-zieger/" class="icon"><i class="fab fa-linkedin"></i></a>
+            <a href="mailto:marie@sonnenhof-zieger.de" class="icon"><i class="far fa-envelope"></i></a>
+        </div>
+    </div>
+</body>
+</html>
